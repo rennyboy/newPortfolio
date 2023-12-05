@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design | Codehal</title>
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- header design -->
+<header class="header">
+    <a href="#" class="logo">Rennyboy.dev</a>
+
+    <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+        
+    </nav>
+    
+    <i class='bx bx-moon' id='darkMode-icon'></i>
+
+    <div class="bx bx-menu" id="menu-icon"></div>
+</header>
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>Renny Boy D. Jumawan Jr.</h1>
+            <p>Web Developer ( Websites and Web Apps) seeking a full-time position concerning web development, 
+                where I can use my knowledge, and skills and develop a functional and well-integrated app. I always put my best foot forward in everything that I do. </p>
+
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <a href="images/rennyboyresume.pdf" class="btn" target="_blank">Resume</a>
+        </div>
+
+        <div class="profession-container">
+            <div class="profession-box">
+                <div class="profession" style="--i:0;">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Developer</h3>
+                </div>
+                <div class="profession" style="--i:1;">
+                    <i class='bx bx-camera'></i>
+                    <h3>Ecommerce Dev</h3>
+                </div>
+                <div class="profession" style="--i:2;">
+                    <i class='bx bx-palette' ></i>
+                    <h3>Web Designer</h3>
+                </div>
+                <div class="profession" style="--i:3;">
+                    <i class='bx bx-video' ></i>
+                    <h3>IT Consultant</h3>
+                </div>
+
+                <div class="circle"></div>
+            </div>
+
+            <div class="overlay"></div>
+
+            <div class="home-img">
+                <img src="images/devnew.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/devnew.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Hi, I'm Here to help you next project!</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu
+                se cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <a href="#" class="btn">Read More</a>
+            
+        </div>
+    </section>
+    <!-- services section design -->
+<section class="services" id="services">
+    <h2 class="heading"> My <span>Services</span></h2>
+
+    <div class="services-container">
+        <div class="services-box">
+            <i class='bx bx-code'></i>
+            <h3>Web Development</h3>
+            <p>Web development is the process of designing, building, and maintaining websites. It involves a wide range of tasks, 
+                including coding, creating layouts, and integrating data from various sources. Web developers use programming 
+                languages such as HTML, CSS, and JavaScript to create websites that are user-friendly, visually appealing, and functional. 
+                They also ensure that websites are secure, scalable, and optimized for search engines. Web development services can include website design, 
+                mobile app development, e-commerce solutions, and more.</p>
+            
+        </div>
+        <div class="services-box">
+            <i class='bx bx-paint'></i>
+            <h3>Digital Marketing</h3>
+            <p>Digital marketing is a form of advertising that uses the internet and digital technologies to connect with customers.
+                It is a set of practices that interacts with customers at every stage of the buying journey, including email, social media, 
+                advertising, and multimedia messaging that is distributed through mobile and web. Digital marketing strategy targets specific 
+                audiences by tailoring content to their preferred digital channels.</p>
+            
+        </div>
+        <div class="services-box">
+            <i class='bx bx-bar-chart-alt'></i>
+            <h3>Graphic Design</h3>
+            <p>Graphic design is the process of creating visual content to communicate information and ideas to a specific audience. 
+                Graphic designers use typography, color, images, and other elements to create designs that are visually appealing and 
+                effective in conveying a message. As a service provider, graphic designers work with clients to understand their needs 
+                and goals, and then create designs that meet those requirements. This can include designing logos, websites, marketing materials, 
+                and more.</p>
+               
+        </div>
+    </div>
+</section>
+    <!-- portfolio section design -->
+<section class="portfolio" id="portfolio">
+    <h2 class="heading">Latest <span>Project</span></h2>
+    <div class="portfolio-container">
+        <div class="portfolio-box">
+            <img src="images/lier.png" alt="">
+            <div class="portfolio-layer">
+                <h4>Pastry Shop</h4>
+                <p>Kakanin Web Shop. Built on Wordpress Platform using elementor and woocommerce</p>
+                <a href="#portfolio" id="myBtn1"><i class='bx bx-link-external' ></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="images/jake.png" alt="">
+            <div class="portfolio-layer">
+                <h4>Accounting Agency</h4>
+                <p>Accounting Management Agency Website that offers membership and church Management.</p>
+                <a href="#portfolio" id="myBtn2"><i class='bx bx-link-external' ></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="images/portfolio.png" alt="">
+            <div class="portfolio-layer">
+                <h4>Portfolio HTML/CSS</h4>
+                <p>My Portfolio Website built on HTML, CSS AND JAVASCRPIT. I use SWIPPER.JS and Scroll.js for the animation.</p>
+                <a href="#portfolio" id="myBtn3"><i class='bx bx-link-external' ></i></a>
+            </div>
+        </div>
+
+	<!-- The Modal ecom shop -->
+	<div id="myModal1" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close1">&times;</span>
+			<div class="gallery">
+				<img src="images/lier.png" alt="Image 1">
+			</div>
+			<div class="description">
+				<p>Kakanin Web Shop. Built on Wordpress Platform using elementor and woocommerce</p>
+			</div>
+		</div>
+	</div>
+
+
+    	<!-- The Modal agency -->
+	<div id="myModal2" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close2">&times;</span>
+			<div class="gallery">
+				<img src="images/jake.png" alt="Image 1">
+			</div>
+			<div class="description">
+				<p>Accounting Management Agency Website that offers membership and church Management.</p>
+			</div>
+		</div>
+	</div>
+
+      	<!-- The Modal for portfolio -->
+	<div id="myModal3" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close3">&times;</span>
+			<div class="gallery">
+				<img src="images/portfolio.png" alt="Image 1">
+			</div>
+			<div class="description">
+				<p>My Portfolio Website built on HTML, CSS AND JAVASCRPIT. I use SWIPPER.JS and Scroll.js for the animation.</p>
+			</div>
+		</div>
+	</div>
+    
+
+    </div>
+</section>
+    <!-- testimonial design -->
+<div class="testimonial-container">
+    <h2 class="heading">Valuable <span>Testimonial</span></h2>
+
+    <div class="testimonial-wrapper">
+
+        <div class="testimonial-box mySwiper">
+
+            <div class="testimonial-content swiper-wrapper">
+
+                <div class="testimonial-slide swiper-slide">
+                    <img src="images/testimonial1.jpg" alt="">
+                    <h3>Jackson Levi</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quas impedit maxime tempora
+                         temporibus, quaerat quos ratione quo praesentium. Dicta debitis ipsa totam assumenda quis ipsam blanditiis iste eligendi perferendis!</p>
+                </div>
+
+                <div class="testimonial-slide swiper-slide">
+                    <img src="images/testimonial2.jpg" alt="">
+                    <h3>Flora Ocean</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quas impedit maxime tempora
+                         temporibus, quaerat quos ratione quo praesentium. Dicta debitis ipsa totam assumenda quis ipsam blanditiis iste eligendi perferendis!</p>
+                </div>
+
+                <div class="testimonial-slide swiper-slide">
+                    <img src="images/testimonial3.jpg" alt="">
+                    <h3>Julian Grayson</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quas impedit maxime tempora
+                         temporibus, quaerat quos ratione quo praesentium. Dicta debitis ipsa totam assumenda quis ipsam blanditiis iste eligendi perferendis!</p>
+                </div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</div>
+    <!-- contact section design -->
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
+
+    <form action="#">
+        <div class="input-box">
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email Address">
+        </div>
+
+        <div class="input-box">
+            <input type="number" placeholder="Mobile Number">
+            <input type="text" placeholder="Email Subject">
+        </div>
+
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send Message" class="btn">
+    </form>
+</section>
+    <!-- footer design -->
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by <a href="https://www.youtube.com/@codehal" onclick="window.open(this.href,'_blank'); return false;">Codehal</a>  inspired theme | All Rights Reserved</p>
+        </div>
+
+        <div class="footer-iconTop"><a href="#home"><i class='bx bx-up-arrow-alt'></i></a></div>
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
