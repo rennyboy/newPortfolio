@@ -969,3 +969,6 @@ pos
     text-align: center;
 }
 
+.submitBtn {
+    cursor: pointer;
+}
