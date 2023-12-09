@@ -127,6 +127,8 @@ window.onclick = function(event) {
   }
 }
 
+const form = document.querySelector("form");
+
 function sendEmail() {
   Email.send({
     Host: "smtp.elasticemail.com",
@@ -139,7 +141,7 @@ function sendEmail() {
   }).then(
     message => alert(message)
   );
-}
+}gi
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
