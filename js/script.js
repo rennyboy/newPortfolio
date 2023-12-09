@@ -126,3 +126,23 @@ window.onclick = function(event) {
     modal3.style.display = "none";
   }
 }
+
+function sendEmail() {
+  Email.send({
+    Host: "smtp.elasticemail.com",
+    Username: "rennyboyjr@gmail.com",
+    Password: "6EBB19D053224D06BE448C002F9AA6A5ADFC",
+    To : 'rennyboyjr@gmail.com',
+    From : "rennyboyjr@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+  }).then(
+    message => alert(message)
+  );
+}
+
+FormData.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  sendEmail();
+});
