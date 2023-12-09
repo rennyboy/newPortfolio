@@ -141,7 +141,7 @@ function sendEmail() {
   );
 }
 
-Form.addEventListener("submit", (e) => {
+form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   sendEmail();
