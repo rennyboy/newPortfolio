@@ -141,7 +141,7 @@ function sendEmail() {
   }).then(
     message => alert(message)
   );
-}gi
+}
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
