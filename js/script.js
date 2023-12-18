@@ -128,11 +128,11 @@ window.onclick = function(event) {
 }
 
 const form = document.querySelector("form");
-const fullName = document.getEleementById("fullName");
-const email = document.getEleementById("email");
-const mobile = document.getEleementById("mobile");
-const subject = document.getEleementById("subject");
-const mess = document.getEleementById("message");
+const fullName = document.getElementById("fullName");
+const email = document.getElementById("email");
+const mobile = document.getElementById("mobile");
+const subject = document.getElementById("subject");
+const mess = document.getElementById("message");
 
 function sendEmail() {
 
