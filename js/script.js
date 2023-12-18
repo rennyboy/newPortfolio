@@ -128,16 +128,24 @@ window.onclick = function(event) {
 }
 
 const form = document.querySelector("form");
+const fullName = document.getEleementById("fullName");
+const email = document.getEleementById("email");
+const mobile = document.getEleementById("mobile");
+const subject = document.getEleementById("subject");
+const mess = document.getEleementById("message");
 
 function sendEmail() {
+
+  const bodyMessage = `Full Name: ${fullName.value}<br> Email: ${email.value}<br> Phone Number: ${mobile.value}<br> Message: ${mess.value}`
+
   Email.send({
     Host: "smtp.elasticemail.com",
     Username: "rennyboyjr@gmail.com",
     Password: "6EBB19D053224D06BE448C002F9AA6A5ADFC",
     To : 'rennyboyjr@gmail.com',
     From : "rennyboyjr@gmail.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
+    Subject : subject.value,
+    Body : bodyMessage
   }).then(
     message => alert(message)
   );
