@@ -136,7 +136,7 @@ const mess = document.getEleementById("message");
 
 function sendEmail() {
 
-  const bodyMessage = `Full Name: ${fullName.value}<br> Email: ${email.value}<br> Phone Number: ${mobile.value}<br> Message: ${mess.value}`
+  const bodyMessage = `Full Name: ${fullName.value}<br> Email: ${email.value}<br> Phone Number: ${mobile.value}<br> Message: ${mess.value}`;
 
   Email.send({
     Host: "smtp.elasticemail.com",
