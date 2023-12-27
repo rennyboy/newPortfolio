@@ -676,6 +676,7 @@ pos
 
     .contact {
         min-height: auto;
+        justify-content: center;
     }
 
     .footer {
