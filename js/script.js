@@ -156,5 +156,10 @@ function sendEmail(fullName, email, mobile, subject, mess) {
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
+  if (subject.value.trim() === '') {
+    alert('Please enter a subject for your message.');
+    return;
+  }
+
   sendEmail(fullName.value, email.value, mobile.value, subject.value, mess.value);
 });
