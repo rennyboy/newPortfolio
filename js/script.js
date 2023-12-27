@@ -144,7 +144,7 @@ function sendEmail(fullName, email, mobile, subject, mess) {
     Password: "6EBB19D053224D06BE448C002F9AA6A5ADFC",
     To: 'rennyboyjr@gmail.com',
     From: "rennyboyjr@gmail.com",
-    Subject: `${subject.value}`,
+    Subject: subject.value,
     Body: bodyMessage
   }).then(
     message => alert(message)
