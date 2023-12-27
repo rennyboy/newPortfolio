@@ -131,10 +131,10 @@ const form = document.querySelector("form");
 const fullName = document.getElementById("name");
 const email = document.getElementById("email");
 const mobile = document.getElementById("mobile");
-// const subject = document.getElementById("subject");
+const subject = document.getElementById("subject");
 const mess = document.getElementById("message");
 
-function sendEmail(fullName, email, mobile, mess) {
+function sendEmail() {
 
   const bodyMessage = `Full Name: ${fullName}<br> Email: ${email}<br> Phone Number: ${mobile}<br> Message: ${mess}`;
 
@@ -144,7 +144,7 @@ function sendEmail(fullName, email, mobile, mess) {
     Password: "6EBB19D053224D06BE448C002F9AA6A5ADFC",
     To: 'rennyboyjr@gmail.com',
     From: "rennyboyjr@gmail.com",
-    Subject: "Email from New Portfolio",
+    Subject: subject.value,
     Body: bodyMessage
   }).then(
     message => alert(message)
@@ -156,5 +156,6 @@ function sendEmail(fullName, email, mobile, mess) {
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  sendEmail(fullName.value, email.value, mobile.value, mess.value);
+
+  sendEmail(fullName.value, email.value, mobile.value, subject.value, mess.value);
 });
