@@ -148,6 +148,8 @@ function sendEmail(fullName, email, mobile, subject, mess) {
     Body : bodyMessage
   }).then(
     message => alert(message)
+  ).catch(
+    error => console.log(error)
   );
 }
 
