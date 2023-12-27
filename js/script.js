@@ -126,32 +126,3 @@ window.onclick = function(event) {
     modal3.style.display = "none";
   }
 }
-
-const form = document.querySelector("form");
-const fullName = document.getElementById("name");
-const email = document.getElementById("email");
-const mobile = document.getElementById("mobile");
-const subject = document.getElementById("subject");
-const mess = document.getElementById("message");
-
-function sendEmail() {
-
-  Email.send({
-    Host: "smtp.elasticemail.com:2525",
-    Username: "rennyboyjr@gmail.com",
-    Password: "6EBB19D053224D06BE448C002F9AA6A5ADFC",
-    To: 'rennyboyjr@gmail.com',
-    From: "rennyboyjr@gmail.com",
-    Subject: "this is subject",
-    Body: "this is body"
-  }).then(
-    message => alert(message)
-  );
-}
-
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-
-  sendEmail();
-});
