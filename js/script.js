@@ -144,7 +144,7 @@ function sendEmail(fullName, email, mobile, subject, mess) {
     Password: "6EBB19D053224D06BE448C002F9AA6A5ADFC",
     To: 'rennyboyjr@gmail.com',
     From: "rennyboyjr@gmail.com",
-    Subject: subject.value,
+    Subject: "This a Message from your portfolio",
     Body: bodyMessage
   }).then(
     message => alert(message)
@@ -153,11 +153,6 @@ function sendEmail(fullName, email, mobile, subject, mess) {
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-
-  if (subject.value.trim() === '') {
-    alert('Please enter a subject for your message.');
-    return;
-  }
 
   sendEmail(fullName.value, email.value, mobile.value, subject.value, mess.value);
 });
