@@ -136,7 +136,7 @@ const mess = document.getElementById("message");
 
 function sendEmail() {
 
-  const bodyMessage = `Full Name: ${fullName}<br> Email: ${email}<br> Phone Number: ${mobile}<br> Message: ${mess}`;
+  const bodyMessage = `Full Name: ${fullName.value}<br> Email: ${email.value}<br> Phone Number: ${mobile.value}<br> Message: ${mess.value}`;
 
   Email.send({
     Host: "smtp.elasticemail.com:2525",
@@ -157,5 +157,5 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
 
 
-  sendEmail(fullName.value, email.value, mobile.value, subject.value, mess.value);
+  sendEmail();
 });
