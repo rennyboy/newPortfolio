@@ -142,14 +142,12 @@ function sendEmail(fullName, email, mobile, subject, mess) {
     Host: "smtp.elasticemail.com:2525",
     Username: "rennyboyjr@gmail.com",
     Password: "6EBB19D053224D06BE448C002F9AA6A5ADFC",
-    To : 'rennyboyjr@gmail.com',
-    From : "rennyboyjr@gmail.com",
-    Subject : subject.value,
-    Body : bodyMessage
+    To: 'rennyboyjr@gmail.com',
+    From: "rennyboyjr@gmail.com",
+    Subject: subject.value,
+    Body: bodyMessage
   }).then(
     message => alert(message)
-  ).catch(
-    error => console.log(error)
   );
 }
 
