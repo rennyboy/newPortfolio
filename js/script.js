@@ -128,7 +128,7 @@ window.onclick = function(event) {
 }
 
 const form = document.querySelector("form");
-const fullName = document.getElementById("fullName");
+const fullName = document.getElementById("name");
 const email = document.getElementById("email");
 const mobile = document.getElementById("mobile");
 const subject = document.getElementById("subject");
